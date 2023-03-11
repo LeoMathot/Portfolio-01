@@ -1,0 +1,337 @@
+:root {
+    --main-white: #f0f0f0;
+    --bright-green: #22D3B0;
+    --nav-bar-green: #006F5B;
+    --dark-green: #081714;
+    --darker-green: #030A09;
+    --gray: #799993;
+    --transf-black-to-bright-green: Black;
+    --transf-darker-green-to-black: var(--darker-green);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: var(--main-white);
+}
+
+body {
+  font-family: sans-serif;
+  text-align: center;
+  color: var(--main-white);
+}
+
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background-color: var(--nav-bar-green);
+  width: 100%;
+  height: 50px;
+  opacity: 98%;
+}
+
+nav {
+  display: flex;
+  justify-content: end;
+  margin: 20px 20px 0 0;
+}
+
+.nav-link {
+  color: var(--main-white);
+  padding-left: 10px;
+  padding-right: 10px;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  color: var(--bright-green);
+  position: relative;
+  top: 1px;
+}
+
+@media (max-width: 250px) {
+  nav {
+    justify-content: center;
+    margin: 20px 0 0 0;
+  }
+}
+
+#welcome-section {
+  width: 100%;
+  height: 100vh;
+  padding-top: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--main-white);
+  background: repeating-linear-gradient(
+      65deg,
+      transparent,
+      transparent 15px,
+      #010606 15px,
+      #031411 20px
+    ),repeating-linear-gradient(
+      -65deg,
+      black,
+      black 15px,
+      #010606 15px,
+      #031411 20px
+    );
+}
+
+.welcome-section-text {
+  position: relative;
+  top: -40px;
+  }
+
+.name {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  text-shadow: 0px 0px 15px Black, 0px 0px 15px Black, 0px 0px 15px Black;
+}
+
+.highlighted-name {
+  color: var(--bright-green);
+}
+
+.subheading {
+  color: var(--nav-bar-green);
+  font-style: italic;
+  font-size: 105%;
+  letter-spacing: 1px;
+  text-shadow: 0px 0px 15px Black, 0px 0px 15px Black;
+}
+
+.rwd-link {
+  color: var(--nav-bar-green);
+  font-weight: bold;
+}
+
+.rwd-link:hover {
+  color: var(--bright-green);
+}
+
+.fcc-link {
+  color: var(--nav-bar-green);
+  font-style: normal;
+  font-family: Roboto Mono, sans-serif;
+  text-decoration: none;
+}
+
+.fcc-link:hover {
+  color: var(--bright-green);
+}
+
+#projects {
+  background: black;
+  width: 100%;
+  padding-top: 70px;
+  padding-bottom: 100px;
+}
+
+#projects .heading {
+  padding-bottom: 60px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  grid-gap: 20px;
+  width: calc(100% - 20px);
+  max-width: 1280px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+@media (max-width: 550px) {
+  .grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 10px;
+    width: calc(100% - 6px);
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.project-tile {
+  background-color: var(--darker-green);
+  border: 2px solid Black;
+  border-radius: 30px 0 20px 0;
+  height: 400px;
+  position: relative;
+  top: 0;
+  transition: top 0.2s ease-out, border 0.7s ease-out, background-color 1s ease-in-out;
+  margin-bottom: 10px;
+}
+
+.project-tile:hover {
+  background-color: Black;
+  border: 2px solid var(--bright-green);
+  position: relative;
+  top: 3px;
+  --transf-darker-green-to-black: Black;
+  --transf-black-to-bright-green: var(--bright-green);
+}
+
+.back {
+  position: absolute;
+  z-index: 1;
+  border-radius: 30px 0 20px 0;
+  width: 100%;
+  height: 100%;
+}
+
+.project-image {
+  position: absolute;
+  left: 0;
+  top: 15%;
+  z-index: 3;
+  height: 60%;
+  width: 100%;
+  object-fit: cover;
+  border-top: 3px solid var(--transf-black-to-bright-green);
+  border-bottom: 3px solid var(--transf-black-to-bright-green);
+  transition: border-top 0.7s ease-out, border-bottom 0.7s ease-out;
+  
+}
+
+.name-cont {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  z-index: 2;
+  color: var(--main-white);
+  width: 70%;
+  height: 20%;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.code-cont {
+  position: absolute;
+  bottom: -2px;
+  right: -2px;
+  z-index: 4;
+  background-color: Black;
+  width: 30%;
+  height: 40%;
+  border-radius: 30px 0 20px 0;
+  border-top: 2px solid var(--transf-black-to-bright-green);
+  border-left: 2px solid var(--transf-black-to-bright-green);
+  transition: border-top 0.7s ease-out, border-left 0.7s ease-out;
+}
+
+.code-btn {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background-color: var(--dark-green);
+  border: 2px solid Black;
+  width: 95%;
+  height: 95%;
+  border-radius: 25px 0 15px 0;
+  padding-top: 40px;
+  transition: border 0.7s ease-out, background-color 1s ease-out;
+}
+
+.code-btn:hover {
+  background-color: Black;
+  border: 2px solid var(--bright-green);
+}
+
+#profile-link {
+  color: var(--main-white);
+  text-decoration: none;
+}
+
+/* CODE SYMBOL */
+.code-symbol {
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding-bottom: 10px;
+  color: var(--nav-bar-green);
+}
+
+/* PLUS SYMBOL */
+.show-more-symbol {
+  font-size: 2rem;
+  font-weight: 600;
+  padding-right: 6px;
+  color: var(--nav-bar-green);
+  position: relative;
+  top: 5px;
+}
+
+/* EMAIL SYMBOL */
+.email-symbol {
+  font-size: 1.3rem;
+  font-weight: 700;
+  padding-right: 6px;
+  color: var(--nav-bar-green);
+}
+
+.button {
+    background-color: transparent;
+    padding: 7px;
+    border: 2px solid transparent;
+    border-radius: 0 10px 0 10px;
+    position: relative;
+    top: 0;
+    transition: top 0.2s ease-out, border 0.5s ease-out, background-color 1s ease-out;
+}
+
+.button:hover {
+  border: 2px solid var(--bright-green);
+  background-color: black;
+  position: relative;
+  top: 3px;
+  --var-transparent-to-bright-green: var(--main-white);
+}
+
+#contact {
+  background-color: var(--dark-green);
+  width: 100%;
+  border-bottom: 3px solid var(--bright-green);
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+
+#contact .heading {
+  padding-bottom: 20px;
+}
+
+#my-email {
+  color: var(--bright-green);
+  margin-top: 20px;
+}
+
+#footer {
+  background-color: var(--dark-green);
+  color: var(--gray);
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 0.75rem;
+}
+
+.fcc-link-footer {
+  color: var(--gray);
+}
+
+.fcc-link-footer:hover {
+  color: var(--bright-green);
+}
