@@ -115,11 +115,11 @@ nav {
 }
 
 .subheading {
+  background-color: rgba(0, 0, 0, 0.5);
   color: var(--nav-bar-green);
   font-style: italic;
   font-size: 105%;
   letter-spacing: 1px;
-  text-shadow: 0px 0px 15px Black, 0px 0px 15px Black;
 }
 
 .rwd-link {
