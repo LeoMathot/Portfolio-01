@@ -2,11 +2,19 @@
     --main-white: #f0f0f0;
     --bright-green: #22D3B0;
     --nav-bar-green: #006F5B;
+    --selection-green: #005848;
     --dark-green: #081714;
     --darker-green: #030A09;
     --gray: #799993;
     --transf-black-to-bright-green: Black;
     --transf-darker-green-to-black: var(--darker-green);
+}
+
+::-moz-selection {
+  background: var(--selection-green);
+}
+::selection {
+  background: var(--selection-green);
 }
 
 * {
@@ -102,8 +110,8 @@ nav {
 }
 
 .leo {
-  background-color: var(--nav-bar-green);
-  padding: 5px 0 5px 5px;
+  background-color: var(--selection-green);
+  padding: 5px 0 0 5px;
 }
 
 .subheading {
