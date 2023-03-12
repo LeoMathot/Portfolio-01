@@ -103,7 +103,7 @@ nav {
 }
 
 .subheading {
-  color: var(--main-white);
+  color: var(--nav-bar-green);
   font-style: italic;
   font-size: 105%;
   letter-spacing: 1px;
