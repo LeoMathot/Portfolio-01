@@ -96,17 +96,14 @@ nav {
   }
 
 .name {
+  color: var(--main-white);
   font-size: 2rem;
   margin-bottom: 40px;
-  text-shadow: 0px 0px 15px Black, 0px 0px 15px Black, 0px 0px 15px Black;
-}
-
-.highlighted-name {
-  color: var(--bright-green);
+  text-shadow: 0px 0px 15px Black, 0px 0px 15px Black;
 }
 
 .subheading {
-  color: var(--nav-bar-green);
+  color: #ffffff;
   font-style: italic;
   font-size: 105%;
   letter-spacing: 1px;
