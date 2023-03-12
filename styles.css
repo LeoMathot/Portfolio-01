@@ -99,7 +99,11 @@ nav {
   color: #ffffff;
   font-size: 2rem;
   margin-bottom: 40px;
-  text-shadow: 0px 0px 15px Black, 0px 0px 15px Black;
+}
+
+.leo {
+  background-color: var(--nav-bar-green);
+  padding: 5px 0 5px 5px;
 }
 
 .subheading {
