@@ -3,33 +3,40 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- styles -->
     <link rel="stylesheet" href="./styles.css" />
-    <title>Personal Portfolio 01</title>
+    <!-- tab icon -->
+    <link rel="icon" type="image/png" href="./icons/leo-icon.png" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>Leonardo Mathot Portfolio 01</title>
   </head>
   <body>
-    <!-- START NAV BAR -->
-    <div id="navbar">
-      <nav>
-      <a class="nav-link" href="#welcome-section">About</a>
-      <a class="nav-link" href="#projects">Work</a>
-      <a class="nav-link" href="#contact">Contact</a>
-    </vav>
-    </div>
-    <!-- END NAV BAR -->
-    <!-- START WELCOME SECTION -->
+    <!-- NAV BAR -->
+    <nav>
+      <div class="nav-links">
+        <a href="#welcome-section">About</a>
+        <a href="#projects">Work</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+    <!-- ////////// -->
+    <!-- WELCOME SECTION -->
     <section id="welcome-section">
       <div class="welcome-section-text">
         <h1 class="name"><span class='leo'>Leo</span>nardo Mathot</h1>
         <p class="subheading">Certified in <a class="rwd-link" href="https://www.freecodecamp.org/certification/fcc19148a18-5d2c-4503-a663-5f54663f89a8/responsive-web-design" target="_blank">Responsive Web Design</a> by <a  class="fcc-link" href="https://www.freecodecamp.org/learn" target="_blank">freeCodeCamp.org</a></p>
       </div>
     </section>
-    <!-- END WELCOME SECTION -->
-    <!-- START PROJECTS SECTION -->
+    <!-- ////////// -->
+    <!-- PROJECTS SECTION -->
     <section id="projects">
       <h1 class="heading">My projects</h1>
-      <div class="grid">
-        <div id="project">
-        <a class="project" href="https://leomathot.github.io/Survey-Form/" target="_blank">
+      <div class="flex">
+        <div class="project">
+        <a href="https://leomathot.github.io/Survey-Form/" target="_blank">
           <div class="project-tile">
             <div class="back"></div>
             <img class="project-image" src="https://github.com/LeoMathot/Survey-Form/blob/main/Survey%20Form%20ss.png?raw=true" alt="Project image" />
@@ -47,8 +54,8 @@
           </div>
         </a>
         </div>
-        <div id="project">
-        <a class="project" href="https://leomathot.github.io/Product-Landing-Page/" target="_blank">
+        <div class="project">
+        <a href="https://leomathot.github.io/Product-Landing-Page/" target="_blank">
           <div class="project-tile">
             <div class="back"></div>
             <img class="project-image" src="https://github.com/LeoMathot/Product-Landing-Page/blob/main/Product%20Landing%20Page%20ss.png?raw=true" alt="Project image" />
@@ -66,8 +73,8 @@
           </div>
         </a>
         </div>
-        <div id="project">
-        <a class="project" href="https://leomathot.github.io/Technical-Documentation-Page/" target="_blank">
+        <div class="project">
+        <a href="https://leomathot.github.io/Technical-Documentation-Page/" target="_blank">
           <div class="project-tile">
             <div class="back"></div>
             <img class="project-image" src="https://github.com/LeoMathot/Technical-Documentation-Page/blob/main/Technical%20Documentation%20Page%20ss.png?raw=true" alt="Project image" />
@@ -85,8 +92,8 @@
           </div>
         </a>
         </div>
-        <div id="project">
-        <a class="project" href="https://leomathot.github.io/Tribute-Page/" target="_blank">
+        <div class="project">
+        <a href="https://leomathot.github.io/Tribute-Page/" target="_blank">
           <div class="project-tile">
             <div class="back"></div>
             <img class="project-image" src="https://github.com/LeoMathot/Tribute-Page/blob/main/Tribute%20Page%20ss.png?raw=true" alt="Project image" />
@@ -104,20 +111,39 @@
           </div>
         </a>
         </div>
+        <div class="project">
+          <a href="https://leomathot.github.io/Tribute-Page/" target="_blank">
+            <div class="project-tile">
+              <div class="back"></div>
+              <img class="project-image" src="https://github.com/LeoMathot/Tribute-Page/blob/main/Tribute%20Page%20ss.png?raw=true" alt="Project image" />
+              <div class="name-cont">
+                <p class="project-name">Tribute Page</p>
+              </div>
+              <div class="code-cont">
+                <a href="https://github.com/LeoMathot/Tribute-Page" target="_blank">
+                  <div class="code-btn">
+                    <p class="code-symbol">&lt;</p>
+                    <p>Code</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </a>
+        </div>
       </div>
       <a class="button" id="profile-link" href="https://github.com/LeoMathot?tab=repositories" target="_blank"><span class="show-more-symbol">+</span> show more</a>
     </section>
-    <!-- END PROJECTS SECTION -->
-    <!-- START CONTACT SECTION -->
+    <!-- ////////// -->
+    <!-- CONTACT SECTION -->
     <section id="contact">
       <h1 class="heading">Contact</h1>
       <p id="my-email" ><span class="email-symbol">@</span> leomathot21@gmail.com</p>
     </section>
-    <!-- END CONTACT SECTION -->
-    <!-- START FOOTER -->
+    <!-- ////////// -->
+    <!-- FOOTER -->
     <div id="footer">
       <p>This is a project for the <a  class="fcc-link-footer" href="https://www.freecodecamp.org/learn" target="_blank">freeCodeCamp.org</a> Responsive Web Design course</p>
     </div>
-    <!-- END FOOTER -->
+    <!-- ////////// -->
   </body>
 </html>
