@@ -178,8 +178,8 @@ section {
 }
 
 .flex:hover >:not(:hover) {
-  filter: grayscale(1);
-  opacity: 0.7;
+  /* filter: grayscale(1); */
+  opacity: 0.6;
 }
 
 .flex .project {
@@ -228,7 +228,6 @@ section {
   object-fit: cover;
   border-top: 3px solid var(--black);
   border-bottom: 3px solid var(--black);
-  transition: border-top 0.7s ease-out, border-bottom 0.7s ease-out;
 }
 
 .name-cont {
@@ -251,33 +250,34 @@ section {
   bottom: -2px;
   right: -2px;
   z-index: 4;
-  background-color: var(--black);
+  background-color: var(--green-4);
   width: 30%;
   height: 40%;
-  border-radius: 15px 0 10px 0;
+  border-radius: 12px 0 10px 0;
   border-top: 2px solid var(--border-var);
   border-left: 2px solid var(--border-var);
-  transition: border-top 0.5s ease-out, border-left 0.5s ease-out;
+  border-bottom: 2px solid var(--black);
+  border-right: 2px solid var(--black);
+  transition: 
+    border-top 0.5s ease-out, 
+    border-left 0.5s ease-out, 
+    border-bottom 0.5s ease-out, 
+    border-right 0.5s ease-out, 
+    background-color 0.5s;
+}
+
+.code-cont:hover {
+  background-color: var(--black);
+  border-bottom: 2px solid var(--green-2);
+  border-right: 2px solid var(--green-2);
 }
 
 .code-btn {
-  position: absolute;
-  right: 0;
-  bottom: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: var(--green-4);
-  border: 2px solid var(--black);
-  width: calc(100% - 3px);
-  height: calc(100% - 3px);
-  border-radius: 10px 0 10px 0;
-  transition: background-color 0.5s ease-out, border 0.5s ease-out;
-}
-
-.code-btn:hover {
-  background-color: var(--black);
-  border: 2px solid var(--green-2);
+  width: 100%;
+  height: 100%;
 }
 
 #profile-link {
