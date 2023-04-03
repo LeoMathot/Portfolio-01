@@ -150,15 +150,16 @@ nav {
   color: var(--green-1);
 }
 
-#projects {
-  background: var(--black);
-  width: 100%;
-  padding-top: 70px;
-  padding-bottom: 100px;
+section {
+  padding: 60px 10px;
 }
 
-#projects .heading {
-  padding-bottom: 60px;
+#projects {
+  background: var(--black);
+}
+
+.heading {
+  margin-bottom: 50px ;
 }
 
 .flex {
@@ -168,7 +169,6 @@ nav {
   justify-content: center;
   max-width: 1280px;
   margin: 0 auto;
-  margin-bottom: 40px;
   padding: 0 10px;
 }
 
@@ -185,7 +185,7 @@ nav {
 .project-tile {
   background-color: var(--green-4);
   border: 2px solid Black;
-  border-radius: 10px 10px 30px 10px;/*the left bottom corner behind the code button*/
+  border-radius: 10px 10px 30px 10px;/*the left bottom corner is behind the code button*/
   height: 400px;
   position: relative;
   top: 0;
@@ -229,9 +229,11 @@ nav {
   z-index: 2;
   color: var(--white);
   width: 70%;
-  height: 20%;
+  height: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  padding: 10px;
 }
 
 .code-cont {
@@ -252,12 +254,14 @@ nav {
   position: absolute;
   right: 0;
   bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   background-color: var(--green-4);
   border: 2px solid var(--black);
   width: calc(100% - 3px);
   height: calc(100% - 3px);
   border-radius: 10px 0 10px 0;
-  padding-top: 40px;
   transition: background-color 0.5s ease-out, border 0.5s ease-out;
 }
 
@@ -275,68 +279,54 @@ nav {
 .code-symbol {
   font-size: 2rem;
   font-weight: bold;
-  letter-spacing: 1px;
-  padding-bottom: 10px;
   color: var(--green-2);
 }
 
 /* PLUS SYMBOL */
 .show-more-symbol {
   font-size: 2rem;
-  font-weight: 600;
-  padding-right: 6px;
+  font-weight: bold;
+  line-height: 1rem;
+  display: inline-block;
+  transform: translate(0, 5px);
+  margin-right: 6px;
   color: var(--green-2);
-  position: relative;
-  top: 5px;
 }
 
 /* EMAIL SYMBOL */
 .email-symbol {
-  font-size: 1.3rem;
-  font-weight: 700;
-  padding-right: 6px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-right: 6px;
   color: var(--green-2);
 }
 
 .button {
-    background-color: transparent;
-    padding: 7px;
+    display: block;
+    margin: 50px auto 0 auto;
     border: 2px solid transparent;
+    width: fit-content;
+    padding: 3px 10px;
     border-radius: 0 10px 0 10px;
-    position: relative;
-    top: 0;
-    transition: top 0.2s ease-out, border 0.5s ease-out, background-color 1s ease-out;
+    transition: border 0.5s ease-out;
 }
 
 .button:hover {
   border: 2px solid var(--green-1);
-  background-color: black;
-  position: relative;
-  top: 3px;
-  --var-transparent-to-green-1: var(--white);
 }
 
 #contact {
-  background-color: var(--green-4);
-  width: 100%;
-  border-bottom: 3px solid var(--green-1);
-  padding-top: 50px;
-  padding-bottom: 100px;
-}
-
-#contact .heading {
-  padding-bottom: 20px;
+  background-color: var(--green-3);
 }
 
 #my-email {
   color: var(--green-1);
-  margin-top: 20px;
 }
 
-#footer {
+footer {
+  border-top: 3px solid var(--green-2);
   background-color: var(--green-4);
   color: var(--white);
-  width: 100%;
   padding: 60px 20px;
   font-size: 0.8rem;
 }
