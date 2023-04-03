@@ -194,18 +194,17 @@ section {
 
 .project-tile {
   background-color: var(--green-3);
-  border: 2px solid Black;
   border-radius: 10px 10px 30px 10px;/*the left bottom corner is behind the code button*/
   height: 400px;
   position: relative;
   top: 0;
-  border: 2px solid var(--black);
+  border: 3px solid var(--black);
   --border-var: var(--black);
   transition: border 0.5s ease-out;
 }
 
 .project-tile:hover {
-  border: 2px solid var(--green-2);
+  border: 3px solid var(--green-2);
   --border-var: var(--green-2);
 }
 
@@ -247,17 +246,17 @@ section {
 
 .code-cont {
   position: absolute;
-  bottom: -2px;
-  right: -2px;
+  bottom: -3px;
+  right: -3px;
   z-index: 4;
   background-color: var(--green-4);
   width: 30%;
   height: 40%;
-  border-radius: 12px 0 10px 0;
-  border-top: 2px solid var(--border-var);
-  border-left: 2px solid var(--border-var);
-  border-bottom: 2px solid var(--black);
-  border-right: 2px solid var(--black);
+  border-radius: 10px 0 10px 0;
+  border-top: 3px solid var(--border-var);
+  border-left: 3px solid var(--border-var);
+  border-bottom: 3px solid var(--black);
+  border-right: 3px solid var(--black);
   transition: 
     border-top 0.5s ease-out, 
     border-left 0.5s ease-out, 
@@ -268,8 +267,8 @@ section {
 
 .code-cont:hover {
   background-color: var(--black);
-  border-bottom: 2px solid var(--green-2);
-  border-right: 2px solid var(--green-2);
+  border-bottom: 3px solid var(--green-2);
+  border-right: 3px solid var(--green-2);
 }
 
 .code-btn {
