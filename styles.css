@@ -1,13 +1,13 @@
 :root {
     --white: #f0f0f0;
-    --black: #080808;
+    --black: #0a0a0a;
     --gray-1: #707070;
     --gray-2: #505050;
 
-    --green-1: #2cf0c8;
-    --green-2: #047762;
-    --green-3: #0b352d;
-    --green-4: #102421;
+    --green-1: #30ffb0;
+    --green-2: #00a0a0;
+    --green-3: #103830;
+    --green-4: #102020;
 }
 
 ::-moz-selection {
@@ -47,7 +47,7 @@ nav {
   z-index: 100;
   background-color: var(--green-2);
   width: 100%;
-  padding: 10px 10px 5px 10px;
+  padding: 10px 10px 0 10px;
 }
 
 .nav-links {
@@ -57,15 +57,12 @@ nav {
 
 .nav-links a {
   color: var(--white);
-  padding: 5px;
-  margin: 0 5px;
-  text-decoration: none;
+  padding: 3px 6px;
+  margin: 0 3px;
 }
 
 .nav-links a:hover {
-  color: var(--green-1);
-  position: relative;
-  top: -1px;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 @media (max-width: 360px) {
@@ -79,8 +76,7 @@ nav {
 
 #welcome-section {
   width: 100%;
-  height: 100vh;
-  padding-top: 60px;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -101,33 +97,36 @@ nav {
       #071b17 20px
       ),
       linear-gradient(
-      black,
+      #000000,
       var(--black)
       );
 }
 
-.welcome-section-text {
-  position: relative;
-  top: -40px;
-  }
-
 .name {
   color: #ffffff;
-  font-size: 2rem;
+  font-size: 3rem;
   margin-bottom: 40px;
 }
 
 .leo {
   background-color: var(--green-3);
-  padding: 5px 0 0 5px;
+  padding: 2px 0 3px 10px;
+}
+
+.mathot {
+  display: inline-block;
+  padding: 2px 0 3px 10px;
+}
+
+.mathot:hover {
+  background-color: var(--green-3);
 }
 
 .subheading {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.65);
   color: var(--green-2);
-  font-style: italic;
-  font-size: 105%;
-  letter-spacing: 1px;
+  font-size: 1.5rem;
+  padding: 0 10px;
 }
 
 .rwd-link {
@@ -170,6 +169,17 @@ section {
   max-width: 1280px;
   margin: 0 auto;
   padding: 0 10px;
+  visibility: hidden;
+}
+
+.flex > * {
+  visibility: visible;
+  transition: opacity 0.5s, filter 0.5s;
+}
+
+.flex:hover >:not(:hover) {
+  filter: grayscale(1);
+  opacity: 0.7;
 }
 
 .flex .project {
@@ -183,7 +193,7 @@ section {
 }
 
 .project-tile {
-  background-color: var(--green-4);
+  background-color: var(--green-3);
   border: 2px solid Black;
   border-radius: 10px 10px 30px 10px;/*the left bottom corner is behind the code button*/
   height: 400px;
@@ -191,13 +201,12 @@ section {
   top: 0;
   border: 2px solid var(--black);
   --border-var: var(--black);
-  transition: background-color 0.5s ease-in-out, border 0.5s ease-out;
+  transition: border 0.5s ease-out;
 }
 
 .project-tile:hover {
-  background-color: var(--black);
-  border: 2px solid var(--green-1);
-  --border-var: var(--green-1);
+  border: 2px solid var(--green-2);
+  --border-var: var(--green-2);
 }
 
 /*.back is here to make the entire tile clickable*/
@@ -217,8 +226,8 @@ section {
   height: 60%;
   width: 100%;
   object-fit: cover;
-  border-top: 3px solid var(--border-var);
-  border-bottom: 3px solid var(--border-var);
+  border-top: 3px solid var(--black);
+  border-bottom: 3px solid var(--black);
   transition: border-top 0.7s ease-out, border-bottom 0.7s ease-out;
 }
 
@@ -234,6 +243,7 @@ section {
   justify-content: center;
   align-items: center;
   text-align: center;
+  padding: 10px;
 }
 
 .code-cont {
@@ -267,7 +277,7 @@ section {
 
 .code-btn:hover {
   background-color: var(--black);
-  border: 2px solid var(--green-1);
+  border: 2px solid var(--green-2);
 }
 
 #profile-link {
@@ -336,5 +346,5 @@ footer {
 }
 
 .fcc-link-footer:hover {
-  color: var(--green-1);
+  color: var(--green-2);
 }
