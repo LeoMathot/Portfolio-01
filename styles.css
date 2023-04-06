@@ -4,11 +4,10 @@
     --gray-1: #707070;
     --gray-2: #505050;
 
-    --green-1: #30ffb0;
+    --green-1: #00cc8f;
     --green-2: #00a0a0;
     --green-3: #103830;
     --green-4: #102020;
-    --green-5: #00976a;
 }
 
 ::-moz-selection {
@@ -181,7 +180,7 @@ section {
 }
 
 .flex:hover >:not(:hover) {
-  opacity: 0.6;
+  opacity: 0.5;
 }
 
 .flex .project {
@@ -200,14 +199,14 @@ section {
   height: 400px;
   position: relative;
   top: 0;
-  border: 3px solid var(--black);
+  border: 2px solid var(--black);
   --border-var: var(--black);
   transition: border 0.5s ease-out;
 }
 
 .project-tile:hover {
-  border: 3px solid var(--green-5);
-  --border-var: var(--green-5);
+  border: 2px solid var(--green-1);
+  --border-var: var(--green-1);
 }
 
 /*.back is here to make the entire tile clickable*/
@@ -248,17 +247,17 @@ section {
 
 .code-cont {
   position: absolute;
-  bottom: -3px;
-  right: -3px;
+  bottom: -2px;
+  right: -2px;
   z-index: 4;
   background-color: var(--green-4);
   width: 30%;
   height: 40%;
   border-radius: 10px 0 10px 0;
-  border-top: 3px solid var(--border-var);
-  border-left: 3px solid var(--border-var);
-  border-bottom: 3px solid var(--black);
-  border-right: 3px solid var(--black);
+  border-top: 2px solid var(--border-var);
+  border-left: 2px solid var(--border-var);
+  border-bottom: 2px solid var(--black);
+  border-right: 2px solid var(--black);
   transition: 
     border 0.5s ease-out, 
     background-color 0.5s;
@@ -266,7 +265,7 @@ section {
 
 .code-cont:hover {
   background-color: var(--black);
-  border: 3px solid var(--white);
+  border: 2px solid var(--white);
 }
 
 .code-btn {
