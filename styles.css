@@ -8,13 +8,17 @@
     --green-2: #00a0a0;
     --green-3: #103830;
     --green-4: #102020;
+
+    --selection-background: #14746c;
 }
 
 ::-moz-selection {
-  background: var(--green-3);
+  background: var(--selection-background);
+  color: var(--white)
 }
 ::selection {
-  background: var(--green-3);
+  background: var(--selection-background);
+  color: var(--white)
 }
 
 * {
@@ -110,18 +114,25 @@ nav {
   margin-bottom: 40px;
 }
 
+.leonardo-block {
+  display: inline-block;
+}
+
 .leo {
-  background-color: var(--green-3);
+  background-color: var(--selection-background);
   padding: 2px 0 3px 10px;
 }
 
-.mathot {
+.mathot-block {
   display: inline-block;
+}
+
+.mathot {
   padding: 2px 0 3px 10px;
 }
 
 .mathot:hover {
-  background-color: var(--green-3);
+  background-color: var(--selection-background);
 }
 
 .subheading {
