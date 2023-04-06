@@ -8,6 +8,7 @@
     --green-2: #00a0a0;
     --green-3: #103830;
     --green-4: #102020;
+    --green-5: #00976a;
 }
 
 ::-moz-selection {
@@ -76,8 +77,10 @@ nav {
 
 #welcome-section {
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
+  min-height: 400px;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   color: var(--white);
@@ -174,11 +177,10 @@ section {
 
 .flex > * {
   visibility: visible;
-  transition: opacity 0.5s, filter 0.5s;
+  transition: opacity 0.5s;
 }
 
 .flex:hover >:not(:hover) {
-  /* filter: grayscale(1); */
   opacity: 0.6;
 }
 
@@ -204,8 +206,8 @@ section {
 }
 
 .project-tile:hover {
-  border: 3px solid var(--green-2);
-  --border-var: var(--green-2);
+  border: 3px solid var(--green-5);
+  --border-var: var(--green-5);
 }
 
 /*.back is here to make the entire tile clickable*/
@@ -258,17 +260,13 @@ section {
   border-bottom: 3px solid var(--black);
   border-right: 3px solid var(--black);
   transition: 
-    border-top 0.5s ease-out, 
-    border-left 0.5s ease-out, 
-    border-bottom 0.5s ease-out, 
-    border-right 0.5s ease-out, 
+    border 0.5s ease-out, 
     background-color 0.5s;
 }
 
 .code-cont:hover {
   background-color: var(--black);
-  border-bottom: 3px solid var(--green-2);
-  border-right: 3px solid var(--green-2);
+  border: 3px solid var(--white);
 }
 
 .code-btn {
