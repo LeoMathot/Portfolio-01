@@ -126,7 +126,7 @@ nav {
       #071b17 20px
       );
   animation-name: movement;
-  animation-duration: 10s;
+  animation-duration: 20s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
