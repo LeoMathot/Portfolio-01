@@ -95,6 +95,19 @@ nav {
   position: absolute;
   bottom: 0;
   width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: 
+      linear-gradient(
+      #000 70%,
+      var(--black)
+      );
+}
+
+.background-move {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
   height: 500%;
   z-index: -1;
   background: 
@@ -111,10 +124,6 @@ nav {
       transparent 15px,
       #010606 15px,
       #071b17 20px
-      ),
-      linear-gradient(
-      #000000,
-      var(--black)
       );
   animation-name: movement;
   animation-duration: 10s;
