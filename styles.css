@@ -1,13 +1,13 @@
 :root {
     --white: #f0f0f0;
-    --black: #0a0a0a;
+    --black: #0c0c0c;
     --gray-1: #707070;
     --gray-2: #505050;
 
-    --green-1: #00cc8f;
+    --green-1: #48f0c0;
     --green-2: #00a0a0;
-    --green-3: #103830;
-    --green-4: #102020;
+    --green-3: #1b7071;
+    --green-4: #215555;
 
     --selection-background: #14746c;
 }
@@ -87,6 +87,16 @@ nav {
   align-items: center;
   justify-content: center;
   color: var(--white);
+  overflow: hidden;
+  position: relative;
+}
+
+.background {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 500%;
+  z-index: -1;
   background: 
       repeating-linear-gradient(
       65deg,
@@ -106,6 +116,15 @@ nav {
       #000000,
       var(--black)
       );
+  animation-name: movement;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes movement {
+  0%   {transform: translateY(0);}
+  100% {transform: translateY(900px);}
 }
 
 .name {
@@ -129,10 +148,6 @@ nav {
 
 .mathot {
   padding: 2px 0 3px 10px;
-}
-
-.mathot:hover {
-  background-color: var(--selection-background);
 }
 
 .subheading {
@@ -188,10 +203,6 @@ section {
 .flex > * {
   visibility: visible;
   transition: opacity 0.5s;
-}
-
-.flex:hover >:not(:hover) {
-  opacity: 0.5;
 }
 
 .flex .project {
